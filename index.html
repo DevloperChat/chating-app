@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Chat Application</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">ChatApp</a>
+        <div class="navbar-icons">
+            <i class="fas fa-cog"></i>
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-user-circle"></i>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left Sidebar (Recent Chats) -->
+            <div class="col-md-3 sidebar">
+                <div class="sidebar-profile">
+                    <img src="default-profile.jpg.jpg" alt="Profile" class="profile-img">
+                    <!-- <input type="file" id="avatarUpload" accept="image/*"> -->
+                    <h5 class="profile-text">Shahe</h5>
+                </div>
+                <div class="recent-chats">
+                    <h6>Recent Chats</h6>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <img src="joe.jpg" alt="Contact" class="contact-img">
+                            <div class="contact-info">
+                                <h6>Joe</h6>
+                                <p>Let's Have fun Tonight.</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <img src="kalen.jpg" alt="Contact" class="contact-img">
+                            <div class="contact-info">
+                                <h6>Kalen</h6>
+                                <p>You know . I love climebing</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <img src="Sachin.jpg" alt="Contact" class="contact-img">
+                            <div class="contact-info">
+                                <h6>Sachin</h6>
+                                <p> Devloper are awesome.</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <img src="contact max.jpg" alt="Contact" class="contact-img">
+                            <div class="contact-info">
+                                <h6>Max</h6>
+                                <p> Okay fine.</p>
+                            </div>
+                        </li>
+                        
+                        <!-- Add more contacts as needed -->
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Chat Window -->
+            <div class="col-md-6 chat-window">
+                <div class="chat-header">
+                    <h5>Chat with Contact</h5>
+                </div>
+                <div class="chat-messages">
+                    <div class="message received">
+                        <p>Hello! How are you?</p>
+                        <span class="timestamp">11:30 AM</span>
+                    </div>
+                    <div class="message sent">
+                        <p>I’m good, thanks! How about you?</p>
+                        <span class="timestamp">11:31 AM</span>
+                    </div>
+                    <!-- Add more messages as needed -->
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="messageInput" class="form-control" placeholder="Type a message...">
+                    <button class="btn btn-primary" onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+
+            
+              
+            
+            <!-- Right Sidebar (Notifications) -->
+            <div class="col-md-3 sidebar">
+                <div class="notifications">
+                    <h6>Notifications</h6>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <p>Notification text...</p>
+                        </li>
+                        <!-- Add more notifications as needed -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+      </div>
+    <footer class="footer">
+        <p>ChatApp © 2024 | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </footer>
+      
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
